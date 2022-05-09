@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="videoEdit4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI0-lF-d1P">
+                                <rect key="frame" x="-0.5" y="49" width="415" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="5i2-VO-1ku"/>
+                                    <constraint firstAttribute="width" constant="415" id="cFC-rZ-Uby"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Select Video..."/>
+                                <connections>
+                                    <action selector="toggleSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8e8-Gc-B6E"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="db4-sR-ymb">
+                                <rect key="frame" x="87" y="121" width="242" height="132"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Bzy-7A-Jfm"/>
+                                    <constraint firstAttribute="height" constant="166" id="KKx-pj-Oiu"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Ooq-5F-hnz"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="FxY-xJ-zvc"/>
+                            </scrollView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="T5h-dM-HKc">
+                                <rect key="frame" x="0.0" y="85" width="414" height="166"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKg-MX-yGz">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="Mxb-hL-Nra"/>
+                                            <constraint firstAttribute="height" constant="40" id="Uj2-7t-K6W"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="video1"/>
+                                        <connections>
+                                            <action selector="btnVideoSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n2B-hL-u6C"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u00-Rz-05c">
+                                        <rect key="frame" x="0.0" y="42" width="414" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="44I-Oz-Jww"/>
+                                            <constraint firstAttribute="height" constant="40" id="mXW-ho-0sc"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="video2"/>
+                                        <connections>
+                                            <action selector="btnVideoSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gaw-s5-1pU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx1-5W-rQ2">
+                                        <rect key="frame" x="0.0" y="84" width="414" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0NX-VW-I83"/>
+                                            <constraint firstAttribute="width" constant="414" id="8qT-2x-YY6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="video3"/>
+                                        <connections>
+                                            <action selector="btnVideoSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AfY-qM-KXE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxf-8U-WDF">
+                                        <rect key="frame" x="0.0" y="126" width="414" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="K66-6M-L4s"/>
+                                            <constraint firstAttribute="height" constant="40" id="MHP-Vx-mwf"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Select From Library..."/>
+                                        <connections>
+                                            <action selector="btnVideoSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wNA-8s-tYj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstItem="Jx1-5W-rQ2" firstAttribute="centerX" secondItem="T5h-dM-HKc" secondAttribute="centerX" id="EhN-uM-pUG"/>
+                                    <constraint firstAttribute="width" constant="414" id="Qbg-95-NTi"/>
+                                    <constraint firstItem="u00-Rz-05c" firstAttribute="centerX" secondItem="T5h-dM-HKc" secondAttribute="centerX" id="Upz-0t-btF"/>
+                                    <constraint firstItem="lxf-8U-WDF" firstAttribute="centerX" secondItem="T5h-dM-HKc" secondAttribute="centerX" id="cdN-bZ-arY"/>
+                                    <constraint firstAttribute="height" constant="166" id="whw-R4-HOi"/>
+                                    <constraint firstItem="fKg-MX-yGz" firstAttribute="centerX" secondItem="T5h-dM-HKc" secondAttribute="centerX" id="yOQ-19-3Ud"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JD8-f7-gWK">
+                                <rect key="frame" x="207" y="261" width="0.0" height="45"/>
+                                <subviews>
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="ycz-Ee-nV0">
+                                        <rect key="frame" x="0.0" y="0.0" width="302" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtv-rj-e7B">
+                                                <rect key="frame" x="0.0" y="0.0" width="135.5" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31" id="PC5-ag-bva"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Merge Video"/>
+                                                <connections>
+                                                    <action selector="toggleMergeView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZg-MT-LJP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W46-Kz-8pt">
+                                                <rect key="frame" x="166.5" y="0.0" width="135.5" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31" id="Tg9-aR-C0d"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Trim Video"/>
+                                                <connections>
+                                                    <action selector="toggleTrimView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n1L-9d-QXx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="302" id="xXN-rw-CZB"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UP0-ev-Oce">
+                                <rect key="frame" x="20" y="311" width="374" height="81"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7i-9t-kuA">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="fpA-xg-eNE"/>
+                                            <constraint firstAttribute="width" constant="374" id="u3J-Wq-XMD"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add Video"/>
+                                        <connections>
+                                            <action selector="toggleMergeMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uwb-6n-hs4"/>
+                                        </connections>
+                                    </button>
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dHu-eB-KHe">
+                                        <rect key="frame" x="0.0" y="31" width="374" height="130"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp5-Iz-9Vp">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31" id="FG1-wG-PRh"/>
+                                                    <constraint firstAttribute="width" constant="374" id="ZhD-nk-J2j"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="video1"/>
+                                                <connections>
+                                                    <action selector="btnMergeSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G1D-NJ-an0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mU-2U-VH9">
+                                                <rect key="frame" x="0.0" y="33" width="374" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31" id="VPO-Zj-QGw"/>
+                                                    <constraint firstAttribute="width" constant="374" id="VnA-xN-Ctf"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="video2"/>
+                                                <connections>
+                                                    <action selector="btnMergeSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kGt-co-YYd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guk-Ne-i8b">
+                                                <rect key="frame" x="0.0" y="66" width="374" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="374" id="gqG-3i-Clu"/>
+                                                    <constraint firstAttribute="height" constant="31" id="tKo-eo-0FI"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="video3"/>
+                                                <connections>
+                                                    <action selector="btnMergeSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="75q-zM-MhW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1O-hU-cex">
+                                                <rect key="frame" x="0.0" y="99" width="374" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="374" id="6Go-bL-1hw"/>
+                                                    <constraint firstAttribute="height" constant="31" id="BSa-AD-Qbi"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Select From Library..."/>
+                                                <connections>
+                                                    <action selector="btnMergeSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rnb-EL-e76"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="374" id="EiR-TB-eii"/>
+                                            <constraint firstAttribute="height" constant="130" id="HBe-eK-PAf"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q23-Zb-yKS">
+                                        <rect key="frame" x="0.0" y="31" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4Xh-yv-yre">
+                                <rect key="frame" x="83" y="556" width="250" height="284"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0NX-JD-idT">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="79"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="i6j-xX-TAg">
+                                                <rect key="frame" x="-2" y="0.0" width="254" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="29" id="7Cd-cP-PoK"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="lk0-5C-Kvv"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="sliderTrimStart:" destination="BYZ-38-t0r" eventType="valueChanged" id="wfs-AD-vNy"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6B-Wk-lwa">
+                                                <rect key="frame" x="0.0" y="29" width="250" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XQa-U0-r0N">
+                                        <rect key="frame" x="0.0" y="94" width="250" height="79"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UXA-Cy-M76">
+                                                <rect key="frame" x="-2" y="0.0" width="254" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="IMC-aL-cre"/>
+                                                    <constraint firstAttribute="height" constant="29" id="TQs-3h-1Xf"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="sliderTrimEnd:" destination="BYZ-38-t0r" eventType="valueChanged" id="FqM-iN-DLy"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aK-wU-XDz">
+                                                <rect key="frame" x="0.0" y="29" width="250" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="bip-Df-5yq">
+                                        <rect key="frame" x="0.0" y="188" width="250" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvh-4n-by4">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Preview Trim"/>
+                                                <connections>
+                                                    <action selector="trimPreview:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6gL-D8-V7U"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1W-tv-1Tr">
+                                        <rect key="frame" x="0.0" y="234" width="250" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="db4-sR-ymb" firstAttribute="top" secondItem="SI0-lF-d1P" secondAttribute="bottom" constant="5" id="3bU-OK-NCE"/>
+                            <constraint firstItem="SI0-lF-d1P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="3uG-E4-xrN"/>
+                            <constraint firstItem="JD8-f7-gWK" firstAttribute="centerX" secondItem="T5h-dM-HKc" secondAttribute="centerX" id="7JH-9Y-DcI"/>
+                            <constraint firstItem="db4-sR-ymb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7XR-Nd-Rdr"/>
+                            <constraint firstItem="4Xh-yv-yre" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GqK-Hb-cPO"/>
+                            <constraint firstItem="SI0-lF-d1P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OI2-Fx-i1q"/>
+                            <constraint firstItem="UP0-ev-Oce" firstAttribute="top" secondItem="db4-sR-ymb" secondAttribute="bottom" constant="60" id="R1t-mO-GrP"/>
+                            <constraint firstItem="UP0-ev-Oce" firstAttribute="top" secondItem="JD8-f7-gWK" secondAttribute="bottom" constant="5" id="Vd9-9i-dLD"/>
+                            <constraint firstItem="JD8-f7-gWK" firstAttribute="top" secondItem="db4-sR-ymb" secondAttribute="bottom" constant="10" id="X14-zB-ahk"/>
+                            <constraint firstItem="T5h-dM-HKc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cIQ-AS-Tic"/>
+                            <constraint firstItem="4Xh-yv-yre" firstAttribute="top" secondItem="JD8-f7-gWK" secondAttribute="bottom" constant="36" id="f7h-iP-VF6"/>
+                            <constraint firstItem="UP0-ev-Oce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lvN-VP-egE"/>
+                            <constraint firstItem="T5h-dM-HKc" firstAttribute="top" secondItem="SI0-lF-d1P" secondAttribute="bottom" constant="5" id="pcd-ww-BOC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAddVideo" destination="t7i-9t-kuA" id="bee-gJ-l0u"/>
+                        <outlet property="btnMergeView" destination="Rtv-rj-e7B" id="JaG-lN-Avf"/>
+                        <outlet property="btnTrimView" destination="W46-Kz-8pt" id="LDn-l5-uzS"/>
+                        <outlet property="buttonView" destination="ycz-Ee-nV0" id="9SD-Rn-76V"/>
+                        <outlet property="mergeView" destination="UP0-ev-Oce" id="D0V-jm-xvZ"/>
+                        <outlet property="selectionMergeMenu" destination="dHu-eB-KHe" id="ZhZ-Np-9Mm"/>
+                        <outlet property="selectionVideoMenu" destination="T5h-dM-HKc" id="v1V-WU-c5c"/>
+                        <outlet property="sliderEndOutlet" destination="UXA-Cy-M76" id="zOy-dX-7Ty"/>
+                        <outlet property="sliderEndOutput" destination="9aK-wU-XDz" id="ix7-VD-KLB"/>
+                        <outlet property="sliderStartOutlet" destination="i6j-xX-TAg" id="kmJ-UU-eUM"/>
+                        <outlet property="sliderStartOutput" destination="b6B-Wk-lwa" id="TRk-nv-fwl"/>
+                        <outlet property="statusMergeLabel" destination="q23-Zb-yKS" id="5Cd-8u-9iM"/>
+                        <outlet property="trimStatus" destination="H1W-tv-1Tr" id="pPb-2B-cXa"/>
+                        <outlet property="trimView" destination="4Xh-yv-yre" id="xke-p1-Itx"/>
+                        <outlet property="videoView" destination="db4-sR-ymb" id="JES-Fc-BnV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
